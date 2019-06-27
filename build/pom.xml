@@ -2,33 +2,34 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>katalonplugin</artifactId>
+    <artifactId>plugin</artifactId>
     <groupId>com.katalon.teamcity</groupId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
   </parent>
   <artifactId>build</artifactId>
   <packaging>pom</packaging>
   <properties>
       <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
-      <teamcity.katalonplugin.plugin.version>snapshot-${maven.build.timestamp}</teamcity.katalonplugin.plugin.version>
-      <teamcity.katalonplugin.plugin.vendorName>Plugin vendor name</teamcity.katalonplugin.plugin.vendorName>
-      <teamcity.katalonplugin.plugin.vendorUrl>Plugin vendor URL</teamcity.katalonplugin.plugin.vendorUrl>
+      <teamcity.katalon.plugin.version>${project.version}</teamcity.katalon.plugin.version>
+      <teamcity.katalon.plugin.vendorName>${organization.name}</teamcity.katalon.plugin.vendorName>
+      <teamcity.katalon.plugin.vendorUrl>${organization.url}</teamcity.katalon.plugin.vendorUrl>
+      <teamcity.katalon.plugin.description>${project.description}</teamcity.katalon.plugin.description>
   </properties>
   <dependencies>
       <dependency>
            <groupId>com.katalon.teamcity</groupId>
            <artifactId>agent</artifactId>
-           <version>1.0-SNAPSHOT</version>
+           <version>${project.version}</version>
       </dependency>
       <dependency>
            <groupId>com.katalon.teamcity</groupId>
            <artifactId>common</artifactId>
-           <version>1.0-SNAPSHOT</version>
+           <version>${project.version}</version>
       </dependency>
       <dependency>
            <groupId>com.katalon.teamcity</groupId>
            <artifactId>server</artifactId>
-           <version>1.0-SNAPSHOT</version>
+           <version>${project.version}</version>
       </dependency>
   </dependencies>
   <build>
@@ -51,15 +52,19 @@
                 <replacements>
                     <replacement>
                         <token>@Version@</token>
-                        <value>${teamcity.katalonplugin.plugin.version}</value>
+                        <value>${teamcity.katalon.plugin.version}</value>
                     </replacement>
                     <replacement>
                         <token>@VendorName@</token>
-                        <value>${teamcity.katalonplugin.plugin.vendorName}</value>
+                        <value>${teamcity.katalon.plugin.vendorName}</value>
                     </replacement>
                     <replacement>
                         <token>@VendorURL@</token>
-                        <value>${teamcity.katalonplugin.plugin.vendorUrl}</value>
+                        <value>${teamcity.katalon.plugin.vendorUrl}</value>
+                    </replacement>
+                    <replacement>
+                        <token>@Description@</token>
+                        <value>${teamcity.katalon.plugin.description}</value>
                     </replacement>
                 </replacements>
             </configuration>
@@ -89,7 +94,7 @@
                   <goal>single</goal>
                 </goals>
                 <configuration>
-                  <finalName>katalonplugin</finalName>
+                  <finalName>katalon-teamcity-plugin</finalName>
                   <outputDirectory>${project.parent.build.directory}</outputDirectory>
                   <appendAssemblyId>false</appendAssemblyId>
                   <descriptors>

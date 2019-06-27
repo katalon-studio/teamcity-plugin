@@ -3,13 +3,13 @@
   <info>
     <name>Katalon</name>
     <display-name>Katalon</display-name>
-    <version>1.0</version>
-    <description>Execute Katalon Studio Tests</description>
+    <version>@Version@</version>
+    <description>@Description@</description>
     <download-url>Plugin download URL</download-url>
-    <email>Plugin author e-mail</email>
+    <email>info@katalon.com</email>
     <vendor>
-      <name>Katalon</name>
-      <url>https://www.katalon.com</url>
+      <name>@VendorName@</name>
+      <url>@VendorURL@</url>
       <logo>https://d1h3p5fzmizjvp.cloudfront.net/themes/katalon_4/images/katalon_template_1809/logo@2x.png</logo>
     </vendor>
   </info>
