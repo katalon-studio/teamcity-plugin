@@ -4,12 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.katalon.teamcity</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.0</version>
+    <version>${revision}</version>
     <packaging>pom</packaging>
     <name>Katalon Studio Plugin</name>
     <description>Execute Katalon Studio tests with TeamCity</description>
 
     <properties>
+        <revision>1.0.1</revision>
         <teamcity-version>10.0</teamcity-version>
         <teamcity.sdk.version>0.4</teamcity.sdk.version>
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
