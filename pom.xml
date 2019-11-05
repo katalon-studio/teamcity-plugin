@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.katalon.teamcity</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <packaging>pom</packaging>
     <name>Katalon Studio Plugin</name>
     <description>Execute Katalon Studio tests with TeamCity</description>
@@ -15,7 +15,7 @@
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <java.level>8</java.level>
 
-        <utils.version>1.0.11</utils.version>
+        <utils.version>1.0.14</utils.version>
         <organization.name>Katalon LLC.</organization.name>
         <organization.url>https://www.katalon.com</organization.url>
     </properties>
