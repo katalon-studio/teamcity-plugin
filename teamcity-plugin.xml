@@ -2,7 +2,7 @@
 <teamcity-plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:schemas-jetbrains-com:teamcity-plugin-v1-xml">
   <info>
     <name>Katalon</name>
-    <display-name>Katalon Studio Runner</display-name>
+    <display-name>Katalon DevOps Runner</display-name>
     <version>@Version@</version>
     <description>@Description@</description>
     <download-url>https://plugins.jetbrains.com/plugin/12653-katalon</download-url>
