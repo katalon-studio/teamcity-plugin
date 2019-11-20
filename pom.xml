@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.katalon.teamcity</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <packaging>pom</packaging>
-    <name>Katalon Studio Plugin</name>
+    <name>Katalon DevOps Plugin</name>
     <description>Execute Katalon Studio tests with TeamCity</description>
 
     <properties>
