@@ -23,5 +23,5 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
-        name: teamcity-plugin.jar
-        path: target/**.jar
+        name: katalon-teamcity-plugin.zip
+        path: target/katalon-teamcity-plugin.zip
